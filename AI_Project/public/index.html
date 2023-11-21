@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Housing</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Dreamhouse</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#page-top">HOME</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Calculator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/avatar1.png" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Dream house</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Make Yourself at Home</p>
+            </div>
+        </header>
+      
+       
+        <!-- Contact Section-->
+        <section class="page-section " id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Price Calculator</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- calculator Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="row">
+                                <!-- area input -->
+                                <div class="col-md-12">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="area" type="number" min="0" max="17000" step="100" placeholder="Enter your area..." data-sb-validations="required" />
+                                        <label for="area">Area (ft&sup2)</label>
+                                        <div class="invalid-feedback" data-sb-feedback="area:required">Area is required.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <!-- bedroom number input -->
+                                <div class="col-md-3">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="bedroom" type="number" step="1" min="0" max="5" value="0" placeholder="Enter number of bedrooms..." data-sb-validations="required" />
+                                        <label for="bedroom">Bedrooms</label>
+                                        <div class="invalid-feedback" data-sb-feedback="bedroom:required">Bedroom number is required.</div>
+                                    </div>
+                                </div>
+                            
+                                <!-- bathroom number input -->
+                                <div class="col-md-3">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="bathroom" type="number" step="1" min="0" max="4" value="0" placeholder="Enter number of bathrooms..." data-sb-validations="required" />
+                                        <label for="bathroom">Bathrooms</label>
+                                        <div class="invalid-feedback" data-sb-feedback="bathroom:required">Bathroom number is required.</div>
+                                    </div>
+                                </div>
+                            
+                                <!-- storage number input -->
+                                <div class="col-md-3">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="storage" type="number" step="1" min="0" max="4" value="0" placeholder="Enter number of storage..." data-sb-validations="required" />
+                                        <label for="storage">Storage</label>
+                                        <div class="invalid-feedback" data-sb-feedback="storage:required">Storage number is required.</div>
+                                    </div>
+                                </div>
+                            
+                                <!-- parking number input -->
+                                <div class="col-md-3">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="parking" type="number" step="1" min="0" max="4" value="0" placeholder="Enter number of parking..." data-sb-validations="required" />
+                                        <label for="parking">Parking</label>
+                                        <div class="invalid-feedback" data-sb-feedback="parking:required">Parking number is required.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Main Road checkbox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="mainroad"  />
+                                    <label class="form-check-label" for="mainroad">Main Road</label>
+                            </div>
+
+                            <!-- Guest room checkbox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="Guest room"  />
+                                    <label class="form-check-label" for="Guest room">Guest room</label>
+                            </div>
+                            
+                            <!-- Basement checkbox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="Basement"  />
+                                    <label class="form-check-label" for="Basement">Basement</label>
+                            </div>
+                            
+                            <!-- Hot waterheating checkbox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="Hot waterheating"  />
+                                    <label class="form-check-label" for="Hot waterheating">Hot waterheating</label>
+                            </div>
+                            
+                            <!-- Airconditioning checkbox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="Airconditioning"  />
+                                    <label class="form-check-label" for="Airconditioning">Airconditioning</label>
+                            </div>
+                            
+                            <!-- Prefarea checkbox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="Prefarea"  />
+                                    <label class="form-check-label" for="Prefarea">Prefarea</label>
+                            </div>
+                            
+                            
+                            <!-- Furnishing status input -->
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="furnishingStatus" data-sb-validations="required">
+                                    <option value="" disabled selected>Select your Furnishing status</option>
+                                    <option value="furnished">Furnished</option>
+                                    <option value="semiFurnished">Semi-Furnished</option>
+                                    <option value="unfurnished">Unfurnished</option>
+                                </select>
+                                <label for="furnishingStatus">Furnishing status</label>
+                                <div class="invalid-feedback" data-sb-feedback="furnishingStatus:required">Please Select your Furnishing status</div>
+                        </div>
+
+                            
+
+
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->                        
+                                                          
+                               
+                                <!-- Your existing HTML code -->
+                                
+                                    <!-- Submit button -->
+                                    <button class="btn btn-primary" type="button" onclick="calculatePrice()">Calculate Price</button>
+                                
+                                    <!-- Submit success message -->
+                                    <div class="d-none" id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <h3><div class="fw-bolder">Home price calculated</div></h3>
+                                            <h5>Predicted Price: <span id="predictedPrice"></span> bath </h5>
+                                            <br />
+                                            <!-- Reset button -->
+                                            <button type="button" class="btn btn-info" onclick="resetPage()">Reset</button>
+                                
+                                            <script>
+                                                function calculatePrice() {
+                                                    // Get input values
+                                                    var area = document.getElementById('area').value;
+                                                    var bedroom = document.getElementById('bedroom').value;
+                                                    var bathroom = document.getElementById('bathroom').value;
+                                                    var storage = document.getElementById('storage').value;
+                                                    var parking = document.getElementById('parking').value;
+                                
+                                                    // Get checkbox values
+                                                    var mainroad = document.getElementById('mainroad').checked ? 1 : 0;
+                                                    var guestRoom = document.getElementById('Guest room').checked ? 1 : 0;
+                                                    var basement = document.getElementById('Basement').checked ? 1 : 0;
+                                                    var hotWaterHeating = document.getElementById('Hot waterheating').checked ? 1 : 0;
+                                                    var airConditioning = document.getElementById('Airconditioning').checked ? 1 : 0;
+                                                    var prefArea = document.getElementById('Prefarea').checked ? 1 : 0;
+                                
+                                                    // Get radio button value
+                                                    var furnishingStatusElement = document.getElementById('furnishingStatus');
+                                                    var furnishingStatusValue = furnishingStatusElement.options[furnishingStatusElement.selectedIndex].value;
+
+                                                    // Map radio button value to numeric value
+                                                    var furnishingStatus;
+                                                    if (furnishingStatusValue === 'furnished') {
+                                                         furnishingStatus = 0;
+                                                    } else if (furnishingStatusValue === 'semiFurnished') {
+                                                        furnishingStatus = 1;
+                                                    } else {
+                                                    // Handle other cases if needed
+                                                        furnishingStatus = 2; // Default value or handle accordingly
+                                                     }
+                                
+                                                    // Calculate predicted price
+                                                    var predictedPrice = (area * 2.43910508e+02) +
+                                                        (bedroom * 1.16835345e+05) +
+                                                        (bathroom * 1.00240982e+06) +
+                                                        (storage * 4.45548880e+05) +
+                                                        (parking * 2.69515333e+05) +
+                                                        (mainroad * 5.79874753e+05) + // Replace with your desired multiplier
+                                                        (guestRoom * 2.84104387e+05) + // Replace with your desired multiplier
+                                                        (basement * 2.47293442e+05) + // Replace with your desired multiplier
+                                                        (hotWaterHeating * 9.64125122e+05) + // Replace with your desired multiplier
+                                                        (airConditioning *  7.32617815e+05) + // Replace with your desired multiplier
+                                                        (prefArea * 7.44004345e+05) + // Replace with your desired multiplier
+                                                        (furnishingStatus * -2.02353513e+05); // Replace with your desired multiplier
+                                                        
+                                                    predictedPrice = predictedPrice.toFixed(2);
+                                                    // Display the result
+                                                    document.getElementById('predictedPrice').textContent = predictedPrice;
+                                
+                                                    // Show the success message
+                                                    document.getElementById('submitSuccessMessage').classList.remove('d-none');
+                                                }
+                                
+                                                function resetPage() {
+                                                    // Reload the page to reset the form
+                                                    location.reload();
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">How to use<h4>
+                        <p class="lead mb-0">
+                            1. Enter the desired house information
+                        </p>
+                    </div>
+
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4"><br></h4>
+                        <p class="lead mb-0">
+                            2. Click the "Calculate Your Price" button
+                        </p>
+                    </div>
+
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4"><br></h4>
+                            <p class="lead mb-0">
+                                3. Check the house price based on the information you entered
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Develop for AI project</small></div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
